@@ -1,0 +1,24 @@
+Maven: 
+
+POM: Project object model
+Maven uses pom.xml to determine the dependencies.
+Maven first looks in the local maven repository for the depenedancies. (Where is local maven repository?)
+
+If Maven doesn't find the specified version dependancies in the local repository, 
+then maven looks for other public maven repositories on the internet.
+Maven build the whole tree of dependacies. 
+
+Every maven project goes through some phases for the build process. 
+
+Default maven build phases: 
+1.	Validate
+2.	Compile
+3.	Test
+4.	Package
+5.	Integration Test
+6.	Verify
+7.	Install
+8. 	Deploy
+
+If you want to achive some kind of custom behavior while building 
+the maven project you can write the scripts for it. 
