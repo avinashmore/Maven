@@ -1,0 +1,58 @@
+At this point of time I am using mac os sierra. 
+
+Step 1 : Check if Maven is gloabally already installed or not
+
+Command: mvn --version
+Explaination: This command returns the version of maven. 
+As I am checking if Maven is installed or not, if the 
+Maven was installed then it would return something. 
+In my case it is not installed. 
+
+Step 2	: Download Maven, unzip it
+
+You can download it from https://maven.apache.org/download.cgi
+After downloading just unzip it.
+
+
+Step 3	:  Move it to some location
+
+Move it to the location where you have all the installables.
+It's not necessary to do so but having all installables at one 
+location is good practice.
+I have moved it to ~ i.e home.
+
+Step 4	:	Set System variables
+
+This basically sets 2 system variable in particular
+PATH - 
+M2_HOME - Folder where maven is located.
+
+Commands: 
+export M3_HOME=/Users/{user-name}/apache-maven-3.3.9/
+export PATH=$PATH:/Users/avinashmore/apache-maven-3.3.9/bin/
+
+Step 5	: Check if maven is installed or not
+
+command: mvn --version
+result: Apache Maven 3.3.9 {and lot more stuff}
+
+Step 6	: Close the terminal and run the command from step 5 again
+
+It is unable to find Maven
+This happens because what we did in step 4 was only for the session
+if you want it to persist even after it was installed? 
+
+Then modify the ~/.bash_profile file
+
+Step 7	: 	Modify the ~/.bash_profile file.
+
+open the  ~/.bash_profile and add the two command from step 4
+save the file.
+close the terminal.
+
+Step 8	:	Reopen the terminal again and check if Maven is globally 
+			accesssible or not
+
+command: mvn -- version
+
+yes! it's working now. 
